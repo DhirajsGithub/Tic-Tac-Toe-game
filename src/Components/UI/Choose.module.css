@@ -1,0 +1,58 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+  }
+  .chooseYou{
+      margin-top: 3rem;
+      text-align: center;
+      color: white;
+      font-size: xx-large;
+  }
+
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .modal div{
+      height: 30vh;
+      width: 40%;
+      border: 1px solid yellow;
+  }
+ 
+  .modal div:first-child{
+      background-color: rgba(255, 0, 0, 0.262);
+      
+  }
+  .modal div:first-child:hover{
+      background-color: red;
+      cursor: pointer;
+  }
+  .modal div:nth-child(2){
+      background-color: rgba(0, 0, 255, 0.484);
+  }
+  .modal div:nth-child(2):hover{
+      background-color: blue;
+      cursor: pointer;
+  }
+button{
+    cursor: pointer;
+    background-color: #a8a22b;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+font-size: xx-large;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+button:hover{
+    background-color: #d3cb3a;
+}

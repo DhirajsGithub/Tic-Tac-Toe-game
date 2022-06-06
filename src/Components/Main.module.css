@@ -1,0 +1,33 @@
+.wrapper{
+    margin: 0 auto;
+    border: 1px solid red;
+    min-width: 80%;
+   height: 60rem;
+   top: 50%;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row div {
+    min-width: 33.33%;
+    min-height: 199px;
+    border: 1px solid rgb(138, 1, 24);
+}
+.row div h1{
+    z-index: -1;
+}
+.row .hover:hover{
+    background-color: rgba(255, 255, 162, 0.279);
+}
+.playerO{
+    background-color: rgb(218, 134, 134);
+}
+.playerX{
+    background-color: rgb(85, 85, 149);
+}
