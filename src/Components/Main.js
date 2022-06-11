@@ -34,7 +34,7 @@ const Main = () => {
 
     const handleOnClick00 = (event)=>{
         let value = event.target.className.slice(0,3);
-        console.log(value)
+  
         
 
         if(value === '0,0'){
@@ -91,19 +91,21 @@ const Main = () => {
         }
         
     }
+
+    const draw = (playerO.length + playerX.length >=9 && !winnerO && !winnerX);
     
 
   return (
     <Fragment>
-    <div style={{textAlign:'center', marginTop:'2rem'}}>
+    <div style={{textAlign:'center', margin:'1rem 0'}}>
       {bg === classes.playerO ? <h1>Player <span style={{color:'blue'}}>X</span> Turn</h1>:''}
       {bg === classes.playerX ? <h1>Player <span style={{color:'red'}}>O</span> Turn</h1>:''}
       </div>
     <div className={classes.wrapper}>
-    
     {!bg &&<Choose playerXSelected ={playerXSelected} playerOSelected={playerOSelected}/>}
 
-    { winnerX && <Winner player='PlayerX'/> || winnerO && <Winner player='PlayerO' />}
+    { winnerX && <Winner player='PlayerX' status="Wins !!!"/> || winnerO && <Winner player='PlayerO' status="Wins !!!" />}
+    {draw && <Winner status="Match Draw" />}
   
         <div className={classes.mainBody}>
             <div className={`${classes.row1} ${classes.row}`}>

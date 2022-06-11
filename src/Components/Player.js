@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Player = (props) => {
 
    
-   console.log(props.playerX)
+
 
    let winning = {
      win1 : ['0,0', '1,1', '2,2'],
