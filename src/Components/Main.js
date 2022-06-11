@@ -94,7 +94,13 @@ const Main = () => {
     
 
   return (
+    <Fragment>
+    <div style={{textAlign:'center', marginTop:'2rem'}}>
+      {bg === classes.playerO ? <h1>Player <span style={{color:'blue'}}>X</span> Turn</h1>:''}
+      {bg === classes.playerX ? <h1>Player <span style={{color:'red'}}>O</span> Turn</h1>:''}
+      </div>
     <div className={classes.wrapper}>
+    
     {!bg &&<Choose playerXSelected ={playerXSelected} playerOSelected={playerOSelected}/>}
 
     { winnerX && <Winner player='PlayerX'/> || winnerO && <Winner player='PlayerO' />}
@@ -149,6 +155,7 @@ const Main = () => {
         </div>
         <Player playerX ={playerX} playerO = {playerO} onWinnigX = {winnerCallX} onWinnigO = {winnerCallO} />
     </div>
+    </Fragment>
   )
 }
 

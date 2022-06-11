@@ -29,6 +29,8 @@
       height: 30vh;
       width: 40%;
       border: 1px solid yellow;
+      text-align: center;
+      color: wheat;
   }
  
   .modal div:first-child{

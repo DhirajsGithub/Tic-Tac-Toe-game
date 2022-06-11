@@ -7,10 +7,10 @@ const Choose = (props) => {
     <h1 className={classes.chooseYou}>Choose You 🖕</h1>
     <div className={classes.modal}>
         <div onClick={props.playerXSelected} className="playerX">
-            <h1>playerX</h1>
+            <h1 >player O</h1>
         </div>
         <div onClick={props.playerOSelected} className="playerO">
-            <h1>playerO</h1>
+            <h1>player X</h1>
         </div>
     </div>
 
